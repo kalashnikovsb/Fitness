@@ -42,11 +42,11 @@ gulp.task("server", function () {
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 
-  //Обновление js
+  //Автообновление после изменения js
   gulp.watch("source/js/*.js", gulp.series("scripts", "refresh"));
 });
 
-//Обновление js
+//Автообновление после изменения js
 gulp.task("scripts", function () {
   return gulp.src("source/js/*.js")
     .pipe(gulp.dest("build/js"))
