@@ -1,0 +1,39 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  border: 4px solid #ffffff;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.button--introduction {
+  width: 234px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: -2px;
+}
+
+@media (max-width: $desktop-width) {
+  .button--introduction {
+    width: 187px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .button--introduction {
+    width: calc(100% + 4px);
+    margin-right: 0;
+    margin-left: -1px;
+    padding-bottom: 22px;
+  }
+}

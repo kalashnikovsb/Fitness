@@ -1,0 +1,62 @@
+.main-header {
+  padding-bottom: 48px;
+  background: red;
+}
+
+.main-header__top {
+  max-width: 1366px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 0;
+  padding-left: 104px;
+  padding-right: 105px;
+}
+
+.main-header__link {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-left: auto;
+}
+
+@media (max-width: $desktop-width) {
+  .main-header {
+    padding-bottom: 82px;
+  }
+
+  .main-header__top {
+    padding-top: 38px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .main-header__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-header {
+    padding-bottom: 78px;
+  }
+
+  .main-header__top {
+    padding-top: 18px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-header__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

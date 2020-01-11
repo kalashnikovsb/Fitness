@@ -1,3 +1,10 @@
-h1 {
-  color: red;
-}
+@import "fonts.scss";
+@import "variables.scss";
+@import "normalize.scss";
+@import "scaffolding.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/main-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-content.scss";
+@import "blocks/introduction.scss";
+@import "blocks/button.scss";
