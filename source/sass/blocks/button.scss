@@ -28,6 +28,25 @@
   margin-right: -2px;
 }
 
+.button--subscription {
+  width: 208px;
+  padding-top: 25px;
+  padding-bottom: 27px;
+  margin-left: -1px;
+  color: #102654;
+  box-shadow: inset 0 0 0 2px rgba(16, 38, 84, 1);
+  border: none;
+}
+
+.button--subscription:hover,
+.button--subscription:focus {
+  opacity: 1;
+  outline: none;
+  color: #ffffff;
+  box-shadow: none;
+  background: linear-gradient(-50deg, #003d85, #b80027 70%);
+}
+
 @media (max-width: $desktop-width) {
   .button--introduction {
     width: 187px;

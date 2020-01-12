@@ -1,0 +1,159 @@
+.subscription {
+  background: #f8f9fc;
+}
+
+.subscription__center {
+  background: red;
+  max-width: 1160px;
+  margin: auto;
+  padding-top: 114px;
+  padding-bottom: 120px;
+}
+
+.subscription__title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  color: #102654;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: auto;
+  text-align: center;
+  background: lightgreen;
+  margin-top: 0;
+  margin-bottom: 38px;
+}
+
+.subscription__times {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.subscription__times-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: #aaaaaa;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.subscription__times-list::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(228, 228, 228);
+}
+
+.subscription__time-item {
+  position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #787878;
+  margin-right: 47px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+.subscription__time-item:last-of-type {
+  margin-right: 0;
+}
+
+.subscription__time-item:hover,
+.subscription__time-item:focus {
+  border-bottom: 2px solid #d10a42;
+  cursor: pointer;
+}
+
+.subscription__rates-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #cccccc;
+}
+
+.subscription__rate-item {
+  width: 360px;
+  box-sizing: border-box;
+  margin-right: 40px;
+  background: #ffffff;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.subscription__rate-item:hover,
+.subscription__rate-item:focus {
+  background: linear-gradient(-30deg, #003d85, #b80027 80%);
+}
+
+.subscription__inner {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: center;
+  background: white;
+}
+
+.subscription__rate-item:last-of-type {
+  margin-right: 0;
+}
+
+.subscription__name {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #102654;
+  background: lightgreen;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.subscription__info {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #495a7d;
+  background: lightgreen;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.subscription__price {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  color: #103aae;
+  background: lightgreen;
+  padding-right: 44px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.subscription__price::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 30px;
+  height: 42px;
+  background: url("../img/rouble.svg") 50% 50% no-repeat;
+}
