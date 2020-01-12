@@ -1,0 +1,280 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 235px;
+  padding-left: 59px;
+}
+
+.about__left {
+  width: 350px;
+  padding-top: 43px;
+}
+
+.about__title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  color: #102654;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about__text--bold {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #102654;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.about__text--light {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #102654;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.about__right {
+  background: #cccccc;
+  position: relative;
+  width: 660px;
+  height: 401px;
+  background-image: url("../img/interior-desktop@1x.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.about__video {
+  position: absolute;
+  width: 364px;
+  height: 228px;
+  bottom: -115px;
+  left: -63px;
+  background: black;
+  background-image: url("../img/video-desktop@1x.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.about__video-screen {
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 54, 122, 0.5);
+  position: relative;
+}
+
+.about__video-button {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  margin-left: -50px;
+  margin-top: -50px;
+  border: 2px solid rgba(0, 61, 133, 0.3);
+}
+
+.about__video-button:hover,
+.about__video-button:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.about__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  margin-left: -36px;
+  margin-top: -36px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #003d85, #b80027 80%);
+}
+
+.about__video-control {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  margin-left: -2px;
+  margin-top: -6px;
+  border: 7px solid transparent;
+  border-left: 12px solid #ffffff;
+}
+
+@media (max-width: $desktop-width) {
+  .about {
+    display: block;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 183px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .about__left {
+    width: auto;
+    padding-top: 0;
+    text-align: center;
+    max-width: 678px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+
+  .about__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+
+  .about__text--bold {
+    margin-bottom: 35px;
+  }
+
+  .about__text--light {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .about__text--light:nth-of-type(3) {
+    display: none;
+  }
+
+  .about__right {
+    width: 678px;
+    height: 345px;
+    margin: 0 auto;
+    background-image: url("../img/interior-tablet@1x.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .about__video {
+    width: 266px;
+    height: 167px;
+    bottom: -83px;
+    left: 50%;
+    margin-left: -133px;
+    background-image: url("../img/video-tablet@1x.jpg");
+  }
+
+  .about__video-button {
+    width: 73px;
+    height: 73px;
+    top: 50%;
+    left: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+  }
+
+  .about__video-play {
+    top: 49%;
+    left: 48%;
+    width: 52px;
+    height: 52px;
+    margin-left: -26px;
+    margin-top: -26px;
+  }
+
+  .about__video-control {
+    top: 26px;
+    left: 26px;
+    margin-left: -3px;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    border-left: 9px solid #ffffff;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    padding-top: 66px;
+    padding-bottom: 277px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about__left {
+    text-align: left;
+    margin-bottom: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 7px;
+  }
+
+  .about__text--bold {
+    margin-bottom: 25px;
+  }
+
+  .about__text--light {
+    padding-left: 0;
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .about__right {
+    width: auto;
+    height: 313px;
+    background-image: url("../img/interior-phone@1x.jpg");
+    background-size: cover;
+  }
+
+  .about__video {
+    width: 100%;
+    height: 167px;
+    left: 0;
+    bottom: -207px;
+    margin-left: 0;
+    background-image: url("../img/video-phone@1x.jpg");
+    background-size: cover;
+  }
+
+  .about__video-screen {
+    width: 100%;
+  }
+
+  .about__video-button {
+    width: 73px;
+    height: 73px;
+    top: 50%;
+    left: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+  }
+
+  .about__video-play {
+    top: 50%;
+    left: 50%;
+    width: 52px;
+    height: 52px;
+    margin-left: -26px;
+    margin-top: -27px;
+  }
+
+  .about__video-control {
+    top: 26px;
+    left: 26px;
+    margin-left: -3px;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    border-left: 9px solid #ffffff;
+  }
+}

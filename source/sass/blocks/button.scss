@@ -16,6 +16,11 @@
   letter-spacing: 0.05em;
 }
 
+.button:hover,
+.button:focus {
+  opacity: 0.5;
+}
+
 .button--introduction {
   width: 234px;
   margin-top: 0;

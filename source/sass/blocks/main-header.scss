@@ -1,6 +1,6 @@
 .main-header {
   padding-bottom: 48px;
-  background: red;
+  background: radial-gradient(circle at left bottom, #003d85, #b80027 50%);
 }
 
 .main-header__top {
@@ -23,6 +23,12 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-left: auto;
+  text-decoration: none;
+}
+
+.main-header__link:hover,
+.main-header__link:focus {
+  opacity: 0.5;
 }
 
 @media (max-width: $desktop-width) {
