@@ -7,7 +7,7 @@
   max-width: 1160px;
   margin: auto;
   padding-top: 114px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 .subscription__title {
@@ -75,24 +75,29 @@
 }
 
 .subscription__rates-list {
+  width: 1160px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
-  margin: 0;
   padding: 0;
-  background: #cccccc;
+  background: green;
 }
 
 .subscription__rate-item {
   width: 360px;
   box-sizing: border-box;
   margin-right: 40px;
+  margin-bottom: 40px;
   background: #ffffff;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 7px;
   padding-right: 7px;
+}
+
+.subscription__rate-item:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 .subscription__rate-item:hover,
@@ -103,14 +108,10 @@
 .subscription__inner {
   padding-top: 55px;
   padding-bottom: 60px;
-  padding-left: 70px;
+  padding-left: 69px;
   padding-right: 70px;
   text-align: center;
   background: white;
-}
-
-.subscription__rate-item:last-of-type {
-  margin-right: 0;
 }
 
 .subscription__name {
@@ -146,6 +147,7 @@
   margin-top: 0;
   margin-bottom: 35px;
   position: relative;
+  text-shadow: 5px 5px #e8e8e8;
 }
 
 .subscription__price::before {
@@ -156,4 +158,119 @@
   width: 30px;
   height: 42px;
   background: url("../img/rouble.svg") 50% 50% no-repeat;
+}
+
+@media (max-width: $desktop-width) {
+  .subscription__center {
+    max-width: none;
+    padding-top: 95px;
+    padding-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .subscription__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  .subscription__times {
+    margin-bottom: 44px;
+  }
+
+  .subscription__time-item {
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 54px;
+    padding-bottom: 13px;
+  }
+
+  .subscription__rates-list {
+    display: block;
+    width: 442px;
+    margin: 0 auto;
+  }
+
+  .subscription__rate-item {
+    width: 442px;
+  }
+
+  .subscription__price::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 61px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .subscription__center {
+    padding-top: 61px;
+    padding-bottom: 35px;
+  }
+
+  .subscription__title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .subscription__times {
+    margin-bottom: 34px;
+  }
+
+  .subscription__time-item {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 45px;
+    padding-bottom: 12px;
+  }
+
+  .subscription__rates-list {
+    width: 290px;
+  }
+
+  .subscription__rate-item {
+    width: 290px;
+    margin-bottom: 35px;
+  }
+
+  .subscription__inner {
+    padding-top: 42px;
+    padding-bottom: 47px;
+    padding-left: 34px;
+    padding-right: 35px;
+  }
+
+  .subscription__name {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .subscription__info {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+  }
+
+  .subscription__price {
+    font-size: 48px;
+    line-height: 72px;
+    padding-right: 33px;
+    margin-bottom: 32px;
+  }
+
+  .subscription__price::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 36px;
+    width: 24px;
+    height: 33px;
+    background-size: cover;
+  }
 }
