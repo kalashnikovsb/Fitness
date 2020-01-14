@@ -1,0 +1,217 @@
+.games {
+  background: green;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.games__left {
+  width: 500px;
+  box-sizing: border-box;
+  padding-top: 76px;
+  padding-bottom: 85px;
+  padding-left: 78px;
+  margin-right: 0;
+  background: #ed0233;
+}
+
+.games__inner {
+  background: black;
+  display: flex;
+  margin-bottom: 9px;
+}
+
+.games__title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  width: 240px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 50px;
+}
+
+.games__scedule {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+  background: darkblue;
+  width: 100%;
+  padding-top: 3px;
+}
+
+.games__date {
+  margin-bottom: 8px;
+}
+
+.games__date-title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  background: red;
+  display: block;
+  position: relative;
+}
+
+.games__date-title::before {
+  content: "";
+  width: 64px;
+  height: 1px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+}
+
+.games__date-text {
+  background: green;
+  display: flex;
+}
+
+.games__day {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  background: red;
+  margin-right: 7px;
+}
+
+.games__month-year {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  background: red;
+  width: 65px;
+  padding-top: 11px;
+}
+
+.games__time-title {
+  font-size: 18px;
+  line-height: 27px;
+  background: red;
+  position: relative;
+}
+
+.games__time-title::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  background: #ffffff;
+  width: 88px;
+  height: 1px;
+}
+
+.games__time-text {
+  background: red;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.games__text {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+
+.games__right {
+  width: 660px;
+  background: #010245;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url("../img/sportsman-desktop@1x.jpg");
+}
+
+@media (max-width: $desktop-width) {
+  .games {
+    max-width: 678px;
+  }
+
+  .games__left {
+    width: 292px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-left: 45px;
+    margin-right: 0;
+  }
+
+  .games__inner {
+    margin-bottom: 1px;
+  }
+
+  .games__title {
+    font-size: 52px;
+    line-height: 52px;
+    width: 300px;
+    margin-right: 23px;
+  }
+
+  .games__scedule {
+    width: 100%;
+    padding-top: 1px;
+  }
+
+  .games__date {
+    margin-bottom: 0;
+  }
+
+  .games__date-title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .games__date-title::before {
+    width: 42px;
+    height: 1px;
+    bottom: -3px;
+  }
+
+  .games__day {
+    font-size: 24px;
+    line-height: 36px;
+    margin-right: 4px;
+  }
+
+  .games__month-year {
+    font-size: 10px;
+    line-height: 12px;
+    width: 40px;
+    padding-top: 5px;
+  }
+
+  .games__time-title {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: -3px;
+  }
+
+  .games__time-title::before {
+    bottom: -2px;
+    left: 0;
+    width: 56px;
+  }
+
+  .games__time-text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .games__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 31px;
+  }
+
+  .games__right {
+    width: 386px;
+    background-image: url("../img/sportsman-tablet@1x.jpg");
+  }
+}

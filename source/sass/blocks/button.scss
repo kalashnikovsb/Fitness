@@ -46,9 +46,27 @@
   background: linear-gradient(-50deg, #003d85, #b80027 70%);
 }
 
+.button--games {
+  background: transparent;
+  width: 347px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-left: -2px;
+}
+
 @media (max-width: $desktop-width) {
   .button--introduction {
     width: 187px;
+  }
+
+  .button--games {
+    font-size: 10px;
+    line-height: 12px;
+    border-width: 2px;
+    width: 204px;
+    margin-left: -1px;
+    padding-top: 12px;
+    padding-bottom: 13px;
   }
 }
 

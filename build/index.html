@@ -44,7 +44,6 @@
 
     <main class="main-content">
       <h1 class="visually-hidden">Фитнес центр Supergym</h1>
-
       <section class="about">
         <div class="about__left">
           <h2 class="about__title">Тренажерный зал</h2>
@@ -67,7 +66,6 @@
       <section class="subscription">
         <div class="subscription__center">
           <h2 class="subscription__title">Абонементы</h2>
-
           <div class="subscription__times">
             <ul class="subscription__times-list">
               <li class="subscription__time-item">1 месяц</li>
@@ -75,13 +73,14 @@
               <li class="subscription__time-item">12 месяцев</li>
             </ul>
           </div>
-
           <ul class="subscription__rates-list">
             <li class="subscription__rate-item">
               <div class="subscription__inner">
                 <p class="subscription__name">С тренером</p>
                 <p class="subscription__info">12 занятий</p>
-                <p class="subscription__price">5000</p>
+                <p class="subscription__price" data-price="5000">
+                  <span class="subscription__num">5000<span>
+                  </span></span></p>
                 <a class="button button--subscription" href="catalog.html">Купить абонемент</a>
               </div>
             </li>
@@ -89,7 +88,9 @@
               <div class="subscription__inner">
                 <p class="subscription__name">Дневной</p>
                 <p class="subscription__info">с 8:00 до 17:00</p>
-                <p class="subscription__price">1700</p>
+                <p class="subscription__price" data-price="1700">
+                  <span class="subscription__num">1700<span>
+                  </span></span></p>
                 <a class="button button--subscription" href="catalog.html">Купить абонемент</a>
               </div>
             </li>
@@ -97,12 +98,42 @@
               <div class="subscription__inner">
                 <p class="subscription__name">Полный день</p>
                 <p class="subscription__info">с 8:00 до 22:00</p>
-                <p class="subscription__price">2700</p>
+                <p class="subscription__price" data-price="2700">
+                  <span class="subscription__num">2700</span>
+                </p>
                 <a class="button button--subscription" href="catalog.html">Купить абонемент</a>
               </div>
             </li>
           </ul>
         </div>
+      </section>
+
+      <section class="games">
+        <div class="games__left">
+
+          <div class="games__inner">
+            <h2 class="games__title">Super Games</h2>
+            <div class="games__scedule">
+              <div class="games__date">
+                <span class="games__date-title">Дата</span>
+                <div class="games__date-text">
+                  <span class="games__day">7</span>
+                  <div class="games__month-year">Марта 2019</div>
+                </div>
+              </div>
+
+              <div class="games__time">
+                <div class="games__time-title">Время</div>
+                <div class="games__time-text">12:00</div>
+              </div>
+            </div>
+          </div>
+
+          <p class="games__text">Ежегодные соревнования по CrossFit</p>
+          <a class="button button--games">Заполнить заявку</a>
+        </div>
+
+        <div class="games__right"></div>
       </section>
 
     </main>
