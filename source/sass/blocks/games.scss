@@ -1,9 +1,8 @@
 .games {
-  background: green;
   max-width: 1160px;
   margin: 0 auto;
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 114px;
 }
 
 .games__left {
@@ -17,7 +16,6 @@
 }
 
 .games__inner {
-  background: black;
   display: flex;
   margin-bottom: 9px;
 }
@@ -39,7 +37,6 @@
 .games__scedule {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
-  background: darkblue;
   width: 100%;
   padding-top: 3px;
 }
@@ -52,7 +49,6 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
-  background: red;
   display: block;
   position: relative;
 }
@@ -68,7 +64,6 @@
 }
 
 .games__date-text {
-  background: green;
   display: flex;
 }
 
@@ -76,7 +71,6 @@
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
-  background: red;
   margin-right: 7px;
 }
 
@@ -84,7 +78,6 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  background: red;
   width: 65px;
   padding-top: 11px;
 }
@@ -92,7 +85,6 @@
 .games__time-title {
   font-size: 18px;
   line-height: 27px;
-  background: red;
   position: relative;
 }
 
@@ -107,7 +99,6 @@
 }
 
 .games__time-text {
-  background: red;
   font-size: 40px;
   line-height: 60px;
   font-weight: bold;
@@ -124,7 +115,7 @@
 
 .games__right {
   width: 660px;
-  background: #010245;
+  background-color: #010245;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url("../img/sportsman-desktop@1x.jpg");
@@ -213,5 +204,25 @@
   .games__right {
     width: 386px;
     background-image: url("../img/sportsman-tablet@1x.jpg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .games {
+    max-width: 290px;
+    display: block;
+  }
+
+  .games__left {
+    width: 290px;
+    padding-left: 44px;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .games__right {
+    width: 290px;
+    height: 292px;
+    background-image: url("../img/sportsman-phone@1x.jpg");
   }
 }

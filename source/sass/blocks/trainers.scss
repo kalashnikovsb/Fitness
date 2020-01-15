@@ -1,0 +1,135 @@
+.trainers {
+  background: red;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 200px;
+}
+
+.trainers__title {
+  padding-left: 2px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  color: #102654;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 56px;
+}
+
+.trainers__list {
+  background: yellow;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.trainers__item {
+  background: green;
+  width: 260px;
+  height: 294px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.trainers__item:last-of-type {
+  margin-right: 0;
+}
+
+.trainers__item-image {
+  display: block;
+  width: 260px;
+  height: 294px;
+}
+
+.trainers__inner {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 243px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.trainers__name {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: red;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: -3px;
+}
+
+.trainers__text {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: red;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #b6bdcc;
+  margin-top: 0;
+  margin-bottom: 32px;
+  display: none;
+}
+
+.trainers__summary-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: blue;
+  text-align: left;
+  padding-left: 70px;
+  padding-right: 10px;
+  display: none;
+}
+
+.trainers__summary-item {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+.trainers__summary-item::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -15px;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.trainers__item:hover {
+  background-color: rgba(16, 38, 84, 0.9);
+}
+
+.trainers__item:hover .trainers__inner {
+  padding-top: 50px;
+}
+
+.trainers__item:hover .trainers__text {
+  display: block;
+}
+
+.trainers__item:hover .trainers__summary-list {
+  display: block;
+}
