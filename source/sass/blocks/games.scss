@@ -124,6 +124,7 @@
 @media (max-width: $desktop-width) {
   .games {
     max-width: 678px;
+    margin-bottom: 95px;
   }
 
   .games__left {
@@ -210,6 +211,7 @@
 @media (max-width: $tablet-width) {
   .games {
     max-width: 290px;
+    margin-bottom: 66px;
     display: block;
   }
 
