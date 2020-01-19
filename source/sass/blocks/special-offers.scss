@@ -30,6 +30,13 @@
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .special-offers__left {
+    background-image: url("../img/special-offer-desktop@2x.jpg");
+    background-size: contain;
+  }
+}
+
 .special-offers__left-wrap {
   background: #ed0233;
   width: 280px;
@@ -187,6 +194,13 @@
     margin-bottom: 30px;
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .special-offers__left {
+      background-image: url("../img/special-offer-tablet@2x.jpg");
+      background-size: contain;
+    }
+  }
+
   .special-offers__title {
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 42px;
@@ -281,6 +295,13 @@
     padding-bottom: 299px;
     background-image: url("../img/special-offer-phone@1x.jpg");
     background-position: 50% 100%;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .special-offers__left {
+      background-image: url("../img/special-offer-phone@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .special-offers__left-wrap {
