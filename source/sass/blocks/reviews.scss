@@ -3,7 +3,7 @@
   position: relative;
   width: 672px;
   margin: auto;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 .reviews__title {
@@ -124,7 +124,7 @@
 @media (max-width: $desktop-width) {
   .reviews {
     width: 678px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   .reviews__title {
@@ -156,7 +156,7 @@
 @media (max-width: $tablet-width) {
   .reviews {
     width: 290px;
-    margin-bottom: 200px;
+    margin-bottom: 70px;
   }
 
   .reviews__title {

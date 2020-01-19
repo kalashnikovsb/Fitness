@@ -1,0 +1,24 @@
+.content-wrap {
+  display: flex;
+  position: relative;
+}
+
+.content-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  height: 1px;
+  background: #74819c;
+}
+
+@media (max-width: $desktop-width) {
+  .content-wrap {
+    display: block;
+  }
+
+  .content-wrap::before {
+    display: none;
+  }
+}

@@ -1,0 +1,123 @@
+.main-form {
+  background: #102654;
+  padding-top: 56px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 170px;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.main-form__inner {
+  background: #102654;
+  width: 410px;
+  margin: auto;
+}
+
+.main-form__title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 41px;
+}
+
+.main-form__inputs-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -1px;
+}
+
+.main-form__input {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 1;
+  width: 190px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  padding-bottom: 6px;
+  margin-bottom: 30px;
+}
+
+.main-form__input::placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.main-form__input:hover,
+.main-form__input:focus {
+  opacity: 0.5;
+}
+
+@media (max-width: $desktop-width) {
+  .main-form {
+    padding-top: 65px;
+    padding-bottom: 69px;
+    padding-left: 0;
+    padding-right: 30px;
+    width: auto;
+  }
+
+  .main-form__inner {
+    width: 472px;
+    margin: auto;
+  }
+
+  .main-form__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .main-form__input {
+    width: 206px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-form {
+    padding-top: 66px;
+    padding-bottom: 68px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-form__inner {
+    width: 290px;
+    margin-left: auto;
+  }
+
+  .main-form__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+
+  .main-form__inputs-wrap {
+    display: block;
+    margin-bottom: 38px;
+  }
+
+  .main-form__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .main-form__input:last-of-type {
+    margin-bottom: 0;
+  }
+}
