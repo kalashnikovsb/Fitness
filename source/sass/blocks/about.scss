@@ -50,15 +50,26 @@
   position: relative;
   width: 660px;
   height: 401px;
-  background-image: url("../img/interior-desktop@1x.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.webp .about__right {
+  background-image: url("../img/interior-desktop@1x.webp");
+}
+
+.no-webp .about__right {
+  background-image: url("../img/interior-desktop@1x.jpg");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .about__right {
+  .webp .about__right {
+    background-image: url("../img/interior-desktop@2x.webp");
+  }
+
+  .no-webp .about__right {
     background-image: url("../img/interior-desktop@2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -69,15 +80,26 @@
   bottom: -115px;
   left: -63px;
   background: #000000;
-  background-image: url("../img/video-desktop@1x.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.webp .about__video {
+  background-image: url("../img/video-desktop@1x.webp");
+}
+
+.no-webp .about__video {
+  background-image: url("../img/video-desktop@1x.jpg");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .about__video {
+  .webp .about__video {
+    background-image: url("../img/video-desktop@2x.webp");
+  }
+
+  .no-webp .about__video {
     background-image: url("../img/video-desktop@2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -171,15 +193,26 @@
     width: 678px;
     height: 345px;
     margin: 0 auto;
-    background-image: url("../img/interior-tablet@1x.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .webp .about__right {
+    background-image: url("../img/interior-tablet@1x.webp");
+  }
+
+  .no-webp .about__right {
+    background-image: url("../img/interior-tablet@1x.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .about__right {
+    .webp .about__right {
+      background-image: url("../img/interior-tablet@2x.webp");
+    }
+
+    .no-webp .about__right {
       background-image: url("../img/interior-tablet@2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -189,13 +222,24 @@
     bottom: -83px;
     left: 50%;
     margin-left: -133px;
+    background-size: cover;
+  }
+
+  .webp .about__video {
+    background-image: url("../img/video-tablet@1x.webp");
+  }
+
+  .no-webp .about__video {
     background-image: url("../img/video-tablet@1x.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .about__video {
+    .webp .about__video {
+      background-image: url("../img/video-tablet@2x.webp");
+    }
+
+    .no-webp .about__video {
       background-image: url("../img/video-tablet@2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -263,14 +307,24 @@
   .about__right {
     width: auto;
     height: 313px;
-    background-image: url("../img/interior-phone@1x.jpg");
     background-size: cover;
   }
 
+  .webp .about__right {
+    background-image: url("../img/interior-phone@1x.webp");
+  }
+
+  .no-webp .about__right {
+    background-image: url("../img/interior-phone@1x.jpg");
+  }
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .about__right {
+    .webp .about__right {
+      background-image: url("../img/interior-phone@2x.webp");
+    }
+
+    .no-webp .about__right {
       background-image: url("../img/interior-phone@2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -280,14 +334,24 @@
     left: 0;
     bottom: -207px;
     margin-left: 0;
-    background-image: url("../img/video-phone@1x.jpg");
     background-size: cover;
   }
 
+  .webp .about__video {
+    background-image: url("../img/video-phone@1x.webp");
+  }
+
+  .no-webp .about__video {
+    background-image: url("../img/video-phone@1x.jpg");
+  }
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .about__video {
+    .webp .about__video {
+      background-image: url("../img/video-phone@2x.webp");
+    }
+
+    .no-webp .about__video {
       background-image: url("../img/video-phone@2x.jpg");
-      background-size: cover;
     }
   }
 

@@ -132,7 +132,12 @@
         <div class="trainers__control-left"></div>
         <ul class="trainers__list">
           <li class="trainers__item">
-            <img class="trainers__item-image" src="../img/anna-pavlova@1x.jpg" srcset="../img/anna-pavlova@1x.jpg 1x, ../img/anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+
+            <picture>
+              <source type="image/webp" srcset="../img/anna-pavlova@1x.webp 1x, ../img/anna-pavlova@2x.webp 2x">
+              <img class="trainers__item-image" src="../img/anna-pavlova@1x.jpg" srcset="../img/anna-pavlova@1x.jpg 1x, ../img/anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+            </picture>
+
             <div class="trainers__inner">
               <p class="trainers__name">Анна Павлова</p>
               <p class="trainers__text">CrossFit</p>
@@ -144,7 +149,12 @@
             </div>
           </li>
           <li class="trainers__item">
-            <img class="trainers__item-image" src="../img/alexey-lavrov@1x.jpg" srcset="../img/alexey-lavrov@1x.jpg 1x, ../img/alexey-lavrov@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
+
+            <picture>
+              <source type="image/webp" srcset="../img/alexey-lavrov@1x.webp 1x, ../img/alexey-lavrov@2x.webp 2x">
+              <img class="trainers__item-image" src="../img/alexey-lavrov@1x.jpg" srcset="../img/alexey-lavrov@1x.jpg 1x, ../img/alexey-lavrov@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
+            </picture>
+
             <div class="trainers__inner">
               <p class="trainers__name">Алексей Лавров</p>
               <p class="trainers__text">CrossFit</p>
@@ -156,7 +166,12 @@
             </div>
           </li>
           <li class="trainers__item">
-            <img class="trainers__item-image" src="../img/alexandr-pashkov@1x.jpg" srcset="../img/alexandr-pashkov@1x.jpg 1x, ../img/alexandr-pashkov@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+
+            <picture>
+              <source type="image/webp" srcset="../img/alexandr-pashkov@1x.webp 1x, ../img/alexandr-pashkov@2x.webp 2x">
+              <img class="trainers__item-image" src="../img/alexandr-pashkov@1x.jpg" srcset="../img/alexandr-pashkov@1x.jpg 1x, ../img/alexandr-pashkov@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+            </picture>
+
             <div class="trainers__inner">
               <p class="trainers__name">Александр Пашков</p>
               <p class="trainers__text">CrossFit</p>
@@ -168,7 +183,12 @@
             </div>
           </li>
           <li class="trainers__item">
-            <img class="trainers__item-image" src="../img/maria-ketova@1x.jpg" srcset="../img/maria-ketova@1x.jpg 1x, ../img/maria-ketova@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
+
+            <picture>
+              <source type="image/webp" srcset="../img/maria-ketova@1x.webp 1x, ../img/maria-ketova@2x.webp 2x">
+              <img class="trainers__item-image" src="../img/maria-ketova@1x.jpg" srcset="../img/maria-ketova@1x.jpg 1x, ../img/maria-ketova@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
+            </picture>
+
             <div class="trainers__inner">
               <p class="trainers__name">Мария Кетова</p>
               <p class="trainers__text">CrossFit</p>
@@ -268,7 +288,12 @@
         <div class="reviews__control-left"></div>
         <ul class="reviews__list">
           <li class="reviews__item">
-            <img class="reviews__image" src="img/anna-orlova@1x.jpg" srcset="../img/anna-orlova@1x.jpg 1x, ../img/anna-orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
+
+            <picture>
+              <source type="image/webp" srcset="../img/anna-orlova@1x.webp 1x, ../img/anna-orlova@2x.webp 2x">
+              <img class="reviews__image" src="img/anna-orlova@1x.jpg" srcset="../img/anna-orlova@1x.jpg 1x, ../img/anna-orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
+            </picture>
+
             <div class="reviews__inner">
               <p class="reviews__author">Анна Орлова</p>
               <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -346,7 +371,9 @@
         </ul>
       </div>
     </footer>
-    <script src="js/vendor.js"></script>
+
+    <script src="js/modernizr-webp.js"></script>
+    <script src="js/imask.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

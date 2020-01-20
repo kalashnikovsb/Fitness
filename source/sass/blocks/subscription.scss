@@ -14,13 +14,24 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   z-index: 1;
+  background-size: cover;
+}
+
+.webp .subscription::before {
+  background-image: url("../img/disks-desktop@1x.webp");
+}
+
+.no-webp .subscription::before {
   background-image: url("../img/disks-desktop@1x.png");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .subscription::before {
+  .webp .subscription::before {
+    background-image: url("../img/disks-desktop@2x.webp");
+  }
+
+  .no-webp .subscription::before {
     background-image: url("../img/disks-desktop@2x.png");
-    background-size: cover;
   }
 }
 
@@ -207,13 +218,24 @@
     bottom: -125px;
     width: 347px;
     height: 444px;
+    background-size: cover;
+  }
+
+  .webp .subscription::before {
+    background-image: url("../img/disks-tablet@1x.webp");
+  }
+
+  .no-webp .subscription::before {
     background-image: url("../img/disks-tablet@1x.png");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .subscription::before {
+    .webp .subscription::before {
+      background-image: url("../img/disks-tablet@2x.webp");
+    }
+
+    .no-webp .subscription::before {
       background-image: url("../img/disks-tablet@2x.png");
-      background-size: cover;
     }
   }
 

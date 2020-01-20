@@ -1,3 +1,5 @@
+'use strict';
+
 var telNumber = document.querySelector('.main-form__input[name="customer-phone"]');
 
 var telOptions = {

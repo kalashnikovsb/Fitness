@@ -100,15 +100,26 @@
   left: 0;
   width: 500px;
   height: 556px;
-  background-image: url("../img/superman-desktop@1x.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.webp .introduction__image::before {
+  background-image: url("../img/superman-desktop@1x.webp");
+}
+
+.no-webp .introduction__image::before {
+  background-image: url("../img/superman-desktop@1x.jpg");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .introduction__image::before {
+  .webp .introduction__image::before {
+    background-image: url("../img/superman-desktop@2x.webp");
+  }
+
+  .no-webp .introduction__image::before {
     background-image: url("../img/superman-desktop@2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -199,15 +210,26 @@
     content: "";
     width: 324px;
     height: 390px;
-    background-image: url("../img/superman-tablet@1x.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .webp .introduction__image::before {
+    background-image: url("../img/superman-tablet@1x.webp");
+  }
+
+  .no-webp .introduction__image::before {
+    background-image: url("../img/superman-tablet@1x.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .introduction__image::before {
+    .webp .introduction__image::before {
+      background-image: url("../img/superman-tablet@2x.webp");
+    }
+
+    .no-webp .introduction__image::before {
       background-image: url("../img/superman-tablet@2x.jpg");
-      background-size: cover;
     }
   }
 

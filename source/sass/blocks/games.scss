@@ -118,13 +118,24 @@
   background-color: #010245;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.webp .games__right {
+  background-image: url("../img/sportsman-desktop@1x.webp");
+}
+
+.no-webp .games__right {
   background-image: url("../img/sportsman-desktop@1x.jpg");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .games__right {
+  .webp .games__right {
+    background-image: url("../img/sportsman-desktop@2x.webp");
+  }
+
+  .no-webp .games__right {
     background-image: url("../img/sportsman-desktop@2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -211,13 +222,25 @@
 
   .games__right {
     width: 386px;
+    background-size: cover;
+  }
+
+  .webp .games__right {
+    background-image: url("../img/sportsman-tablet@1x.webp");
+  }
+
+
+  .no-webp .games__right {
     background-image: url("../img/sportsman-tablet@1x.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .games__right {
+    .webp .games__right {
+      background-image: url("../img/sportsman-tablet@2x.webp");
+    }
+
+    .no-webp .games__right {
       background-image: url("../img/sportsman-tablet@2x.jpg");
-      background-size: cover;
     }
   }
 }
@@ -239,13 +262,24 @@
   .games__right {
     width: 290px;
     height: 292px;
+    background-size: cover;
+  }
+
+  .webp .games__right {
+    background-image: url("../img/sportsman-phone@1x.webp");
+  }
+
+  .no-webp .games__right {
     background-image: url("../img/sportsman-phone@1x.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .games__right {
+    .webp .games__right {
+      background-image: url("../img/sportsman-phone@2x.webp");
+    }
+
+    .no-webp .games__right {
       background-image: url("../img/sportsman-phone@2x.jpg");
-      background-size: cover;
     }
   }
 }
