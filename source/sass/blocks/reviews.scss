@@ -78,6 +78,12 @@
   border-bottom: 16px solid transparent;
 }
 
+.reviews__control-left:hover,
+.reviews__control-left:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .reviews__control-left::before {
   content: "";
   position: absolute;
@@ -100,6 +106,12 @@
   border-top: 16px solid transparent;
   border-left: 16px solid #afafaf;
   border-bottom: 16px solid transparent;
+}
+
+.reviews__control-right:hover,
+.reviews__control-right:focus {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .reviews__control-right::before {

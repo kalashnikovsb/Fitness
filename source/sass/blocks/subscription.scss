@@ -98,6 +98,10 @@
   color: #102654;
 }
 
+.subscription__time-item:focus {
+  cursor: pointer;
+}
+
 .subscription__time-item:last-of-type {
   margin-right: 0;
 }
