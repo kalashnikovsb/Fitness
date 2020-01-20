@@ -2,7 +2,7 @@
   max-width: 1272px;
   margin: 0 auto;
   padding-top: 0;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
@@ -89,23 +89,27 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 46px;
+}
+
+.trainers__wrap {
+  max-width: 1180px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: green;
+  overflow: hidden;
 }
 
 .trainers__list {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
   position: relative;
-  background: green;
-  overflow: hidden;
-
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  background: red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .trainers__item {
@@ -193,7 +197,7 @@
 }
 
 .trainers__item:hover {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 .trainers__item:hover .trainers__inner {
@@ -213,7 +217,7 @@
   .trainers {
     max-width: 678px;
     padding-bottom: 80px;
-    margin-bottom: 95px;
+    margin-bottom: 10px;
   }
 
   .trainers__control-left {
@@ -228,7 +232,11 @@
     text-align: center;
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+  }
+
+  .trainers__wrap {
+    max-width: 586px;
   }
 
   .trainers__list {
@@ -274,7 +282,7 @@
   .trainers {
     max-width: 290px;
     padding-bottom: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .trainers__control-left {
@@ -310,11 +318,11 @@
   .trainers__title {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 26px;
+    margin-bottom: 36px;
   }
 
-  .trainers__list {
-    max-width: 226px;
+  .trainers__wrap {
+    max-width: 246px;
   }
 
   .trainers__item {
