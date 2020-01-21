@@ -52,7 +52,7 @@
         <div class="about__right">
           <div class="about__video">
             <div class="about__video-screen"></div>
-            <button class="about__video-button">
+            <button class="about__video-button" aria-label="Кнопка проигрывать-пауза видео">
               <span class="about__video-play">
                 <span class="about__video-control"></span>
               </span>
@@ -265,7 +265,19 @@
           <div class="benefits__top">
             <div class="benefits__item benefits__item--square">
               <div class="benefits__left">
-                <p class="benefits__left-num">900</p>
+
+                <div class="benefits__left-num benefits__left-num--square">
+                  <svg class="benefits__left-svg" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <linearGradient gradientTransform="rotate(60)" id="linear-gradient1">
+                      <stop offset="30%" stop-color="#b80027"></stop>
+                      <stop offset="80%" stop-color="#003d85"></stop>
+                    </linearGradient>
+                    <text fill="url(#linear-gradient1)">
+                      <tspan x="0" y="51">900</tspan>
+                    </text>
+                  </svg>
+                </div>
+
                 <p class="benefits__left-text">кв/м</p>
               </div>
               <div class="benefits__right">
@@ -275,7 +287,19 @@
             </div>
             <div class="benefits__item benefits__item--parking">
               <div class="benefits__left">
-                <p class="benefits__left-num">70</p>
+
+                <div class="benefits__left-num benefits__left-num--parking">
+                  <svg class="benefits__left-svg benefits__left-svg--parking" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <linearGradient gradientTransform="rotate(60)" id="linear-gradient2">
+                      <stop offset="30%" stop-color="#b80027"></stop>
+                      <stop offset="80%" stop-color="#003d85"></stop>
+                    </linearGradient>
+                    <text fill="url(#linear-gradient2)">
+                      <tspan x="0" y="51">70</tspan>
+                    </text>
+                  </svg>
+                </div>
+
                 <p class="benefits__left-text">машин</p>
               </div>
               <div class="benefits__right">
@@ -287,7 +311,19 @@
           <div class="benefits__bottom">
             <div class="benefits__item benefits__item--places">
               <div class="benefits__left">
-                <p class="benefits__left-num">350</p>
+
+                <div class="benefits__left-num benefits__left-num--places">
+                  <svg class="benefits__left-svg benefits__left-svg--parking" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <linearGradient gradientTransform="rotate(60)" id="linear-gradient3">
+                      <stop offset="30%" stop-color="#b80027"></stop>
+                      <stop offset="80%" stop-color="#003d85"></stop>
+                    </linearGradient>
+                    <text fill="url(#linear-gradient3)">
+                      <tspan x="0" y="51">350</tspan>
+                    </text>
+                  </svg>
+                </div>
+
                 <p class="benefits__left-text">мест</p>
               </div>
               <div class="benefits__right">
@@ -297,7 +333,19 @@
             </div>
             <div class="benefits__item benefits__item--years">
               <div class="benefits__left">
-                <p class="benefits__left-num">5+</p>
+
+                <div class="benefits__left-num benefits__left-num--years">
+                  <svg class="benefits__left-svg benefits__left-svg--parking" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <linearGradient gradientTransform="rotate(60)" id="linear-gradient4">
+                      <stop offset="30%" stop-color="#b80027"></stop>
+                      <stop offset="80%" stop-color="#003d85"></stop>
+                    </linearGradient>
+                    <text fill="url(#linear-gradient4)">
+                      <tspan x="0" y="51">5+</tspan>
+                    </text>
+                  </svg>
+                </div>
+
                 <p class="benefits__left-text">лет</p>
               </div>
               <div class="benefits__right">
@@ -374,10 +422,10 @@
           <form class="main-form__inner" action="https://echo.htmlacademy.ru" method="post">
             <h2 class="main-form__title">Бесплатное занятие</h2>
             <div class="main-form__inputs-wrap">
-              <input class="main-form__input" type="text" name="customer-name" placeholder="Имя">
-              <input class="main-form__input" type="tel" name="customer-phone" placeholder="Телефон">
+              <input class="main-form__input" type="text" name="customer-name" placeholder="Имя" aria-label="Поле ввода имени">
+              <input class="main-form__input" type="tel" name="customer-phone" placeholder="Телефон" aria-label="Поле ввода телефона">
             </div>
-            <button class="button button--submit" type="submit">Отправить</button>
+            <button class="button button--submit" type="submit" aria-label="Кнопка отправки данных">Отправить</button>
           </form>
         </section>
         <section class="contacts">
@@ -439,8 +487,7 @@
       </div>
     </footer>
 
-    <script src="js/modernizr-webp.js"></script>
-    <script src="js/imask.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/vendor-min.js"></script>
+    <script src="js/main-min.js"></script>
   </body>
 </html>
