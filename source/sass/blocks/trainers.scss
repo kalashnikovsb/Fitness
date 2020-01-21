@@ -6,7 +6,6 @@
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
-  background: yellow;
   overflow: hidden;
 }
 
@@ -25,7 +24,6 @@
 
 .trainers__control-left:hover,
 .trainers__control-left:focus {
-  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -37,7 +35,7 @@
   width: 0;
   height: 0;
   border-top: 16px solid transparent;
-  border-right: 16px solid yellow;
+  border-right: 16px solid #ffffff;
   border-bottom: 16px solid transparent;
 }
 
@@ -55,7 +53,6 @@
 
 .trainers__control-right:hover,
 .trainers__control-right:focus {
-  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -67,7 +64,7 @@
   width: 0;
   height: 0;
   border-top: 16px solid transparent;
-  border-left: 16px solid yellow;
+  border-left: 16px solid #ffffff;
   border-bottom: 16px solid transparent;
 }
 
@@ -96,7 +93,6 @@
   max-width: 1180px;
   box-sizing: border-box;
   margin: 0 auto;
-  background: green;
   overflow: hidden;
 }
 
@@ -105,7 +101,6 @@
   list-style: none;
   display: flex;
   position: relative;
-  background: red;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -119,6 +114,7 @@
   position: relative;
   flex-shrink: 0;
   flex-grow: 0;
+  z-index: 2;
 }
 
 .trainers__item-image {
@@ -197,7 +193,7 @@
 }
 
 .trainers__item:hover {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .trainers__item:hover .trainers__inner {
@@ -237,10 +233,6 @@
 
   .trainers__wrap {
     max-width: 586px;
-  }
-
-  .trainers__list {
-    max-width: 566px;
   }
 
   .trainers__item {
@@ -296,7 +288,7 @@
     top: -9px;
     left: 1px;
     border-top: 9px solid transparent;
-    border-right: 10px solid yellow;
+    border-right: 10px solid #ffffff;
     border-bottom: 9px solid transparent;
   }
 
@@ -311,7 +303,7 @@
     top: -9px;
     right: 1px;
     border-top: 9px solid transparent;
-    border-left: 10px solid yellow;
+    border-left: 10px solid #ffffff;
     border-bottom: 9px solid transparent;
   }
 
