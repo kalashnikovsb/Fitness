@@ -87,11 +87,6 @@ reviewsNext.addEventListener('keydown', function (evt) {
   }
 });
 
-// Переопределение ширины элементов при изменении экрана
-window.addEventListener('resize', function () {
-  screenWidthDetection();
-});
-
 // Предыдущий тренер
 var prevTrainerItem = function () {
   trainerPosition += trainerWidth;
@@ -126,6 +121,11 @@ trainerNext.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 13) {
     nextTrainerItem();
   }
+});
+
+// Переопределение ширины элементов при изменении экрана
+window.addEventListener('resize', function () {
+  screenWidthDetection();
 });
 
 // Маска номера телефона
