@@ -42,7 +42,7 @@
   padding-bottom: 80px;
 }
 
-.subscription__title {
+.subscription h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -153,7 +153,7 @@
   background: white;
 }
 
-.subscription__name {
+.subscription__inner h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   line-height: 29px;
@@ -163,7 +163,8 @@
   margin-bottom: 10px;
 }
 
-.subscription__info {
+.subscription__inner p:first-of-type {
+  display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -173,7 +174,7 @@
   margin-bottom: 65px;
 }
 
-.subscription__price {
+.subscription__inner div {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 60px;
   line-height: 90px;
@@ -186,7 +187,7 @@
   z-index: 2;
 }
 
-.subscription__price::before {
+.subscription__inner div::before {
   content: "";
   position: absolute;
   top: 25px;
@@ -197,7 +198,7 @@
   background: url("../img/rouble.svg") 50% 50% no-repeat;
 }
 
-.subscription__price::after {
+.subscription__inner div::after {
   content: attr(data-price);
   position: absolute;
   bottom: -4px;
@@ -207,7 +208,7 @@
   color: rgba(232, 232, 232, 0.48);
 }
 
-.subscription__num {
+.subscription__inner span {
   position: relative;
   z-index: 2;
 }
@@ -251,7 +252,7 @@
     padding-right: 0;
   }
 
-  .subscription__title {
+  .subscription h2 {
     font-size: 42px;
     line-height: 42px;
     margin-top: 0;
@@ -279,14 +280,14 @@
     width: 442px;
   }
 
-  .subscription__price::before {
+  .subscription__inner div::before {
     content: "";
     position: absolute;
     top: 25px;
     right: 61px;
   }
 
-  .subscription__price::after {
+  .subscription__inner div::after {
     left: 44px;
   }
 }
@@ -305,7 +306,7 @@
     padding-bottom: 35px;
   }
 
-  .subscription__title {
+  .subscription h2 {
     font-size: 32px;
     line-height: 42px;
     margin-top: 0;
@@ -339,26 +340,26 @@
     padding-right: 35px;
   }
 
-  .subscription__name {
+  .subscription__inner h3 {
     font-size: 22px;
     line-height: 24px;
     margin-bottom: 10px;
   }
 
-  .subscription__info {
+  .subscription__inner p:first-of-type {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 53px;
   }
 
-  .subscription__price {
+  .subscription__inner div {
     font-size: 48px;
     line-height: 72px;
     padding-right: 33px;
     margin-bottom: 32px;
   }
 
-  .subscription__price::before {
+  .subscription__inner div::before {
     content: "";
     position: absolute;
     top: 22px;
@@ -368,7 +369,7 @@
     background-size: cover;
   }
 
-  .subscription__price::after {
+  .subscription__inner div::after {
     font-size: 80px;
     line-height: 120px;
     left: 22px;

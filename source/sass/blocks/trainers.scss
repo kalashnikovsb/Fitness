@@ -75,7 +75,7 @@
   cursor: pointer;
 }
 
-.trainers__title {
+.trainers h2 {
   padding-left: 58px;
   padding-right: 58px;
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -117,7 +117,7 @@
   z-index: 2;
 }
 
-.trainers__item-image {
+.trainers__item img {
   width: 260px;
   height: 294px;
   display: block;
@@ -136,7 +136,7 @@
   right: 0;
 }
 
-.trainers__name {
+.trainers__inner p {
   padding-left: 20px;
   padding-right: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -148,7 +148,7 @@
   margin-bottom: -3px;
 }
 
-.trainers__text {
+.trainers__inner span {
   padding-left: 20px;
   padding-right: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -171,7 +171,7 @@
   display: none;
 }
 
-.trainers__summary-item {
+.trainers__summary-list li {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -181,7 +181,7 @@
   position: relative;
 }
 
-.trainers__summary-item::before {
+.trainers__summary-list li::before {
   content: "";
   position: absolute;
   top: 9px;
@@ -201,7 +201,7 @@
   background-color: rgba(16, 38, 84, 0.9);
 }
 
-.trainers__item:hover .trainers__text {
+.trainers__item:hover span {
   display: block;
 }
 
@@ -224,7 +224,7 @@
     top: 218px;
   }
 
-  .trainers__title {
+  .trainers h2 {
     text-align: center;
     font-size: 42px;
     line-height: 42px;
@@ -240,7 +240,7 @@
     margin-right: 30px;
   }
 
-  .trainers__item-image {
+  .trainers__item img {
     width: 268px;
     height: 294px;
   }
@@ -250,13 +250,13 @@
     padding-top: 243px;
   }
 
-  .trainers__name {
+  .trainers__inner p {
     padding-left: 13px;
     margin-top: 0;
     margin-bottom: -3px;
   }
 
-  .trainers__text {
+  .trainers__inner span {
     padding-left: 13px;
     margin-bottom: 31px;
   }
@@ -307,7 +307,7 @@
     border-bottom: 9px solid transparent;
   }
 
-  .trainers__title {
+  .trainers h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 36px;
@@ -322,7 +322,7 @@
     height: 274px;
   }
 
-  .trainers__item-image {
+  .trainers__item img {
     width: 226px;
     height: 274px;
   }
@@ -332,11 +332,11 @@
     padding-top: 220px;
   }
 
-  .trainers__name {
+  .trainers__inner p {
     padding-left: 20px;
   }
 
-  .trainers__text {
+  .trainers__inner span {
     padding-left: 20px;
     margin-bottom: 32px;
   }

@@ -85,7 +85,7 @@
   background: rgba(209, 10, 66, 0.2);
 }
 
-.benefits__title {
+.benefits h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -137,7 +137,7 @@
   display: block;
 }
 
-.benefits__left-text {
+.benefits__left p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -151,7 +151,7 @@
   padding-left: 30px;
 }
 
-.benefits__right-title {
+.benefits__right p:first-child {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 22px;
   line-height: 33px;
@@ -161,7 +161,7 @@
   margin-bottom: 6px;
 }
 
-.benefits__right-text {
+.benefits__right p:last-child {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -191,7 +191,7 @@
   margin-bottom: 32px;
 }
 
-.benefits__add-num {
+.benefits__add-title span:first-child {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 74px;
   line-height: 111px;
@@ -203,7 +203,7 @@
   margin-bottom: -14px;
 }
 
-.benefits__add-subtitle {
+.benefits__add-title span:last-child {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   line-height: 39px;
@@ -214,7 +214,7 @@
   margin-bottom: 0;
 }
 
-.benefits__add-text {
+.benefits__add p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -331,13 +331,13 @@
     padding-left: 30px;
   }
 
-  .benefits__title {
+  .benefits h2 {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 0;
   }
 
-  .benefits__right-title {
+  .benefits__right p:first-child {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2px;
@@ -360,12 +360,12 @@
     margin-bottom: 14px;
   }
 
-  .benefits__add-num {
+  .benefits__add-title span:first-child {
     padding-right: 4px;
     margin-bottom: -18px;
   }
 
-  .benefits__add-subtitle {
+  .benefits__add-title span:last-child {
     font-size: 22px;
     line-height: 33px;
   }
@@ -476,12 +476,12 @@
     padding-left: 0;
   }
 
-  .benefits__title {
+  .benefits h2 {
     font-size: 32px;
     line-height: 32px;
   }
 
-  .benefits__right-title {
+  .benefits__right p:first-child {
     margin-bottom: 2px;
   }
 
@@ -495,12 +495,12 @@
     padding-right: 70px;
   }
 
-  .benefits__add-title {
-    margin-bottom: 9px;
+  .benefits__add-title span:first-child {
+    margin-bottom: -22px;
   }
 
-  .benefits__add-num {
+  .benefits__add-title span:last-child {
     padding-right: 4px;
-    margin-bottom: -22px;
+    margin-bottom: -5px;
   }
 }
