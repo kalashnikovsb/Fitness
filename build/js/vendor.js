@@ -2,7 +2,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
     typeof define === 'function' && define.amd ? define(['exports'], factory) :
-      (global = global || self, factory(global.IMask = {}));
+      (global = global || self, factory(global.iMask = {}));
 }(this, function (exports) { 'use strict';
 
   var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
@@ -1632,25 +1632,25 @@
       throw new Error('mask property should be defined');
     }
 
-    if (mask instanceof RegExp) return g.IMask.MaskedRegExp;
-    if (isString(mask)) return g.IMask.MaskedPattern;
-    if (mask instanceof Date || mask === Date) return g.IMask.MaskedDate;
-    if (mask instanceof Number || typeof mask === 'number' || mask === Number) return g.IMask.MaskedNumber;
-    if (Array.isArray(mask) || mask === Array) return g.IMask.MaskedDynamic; // $FlowFixMe
+    if (mask instanceof RegExp) return g.iMask.MaskedRegExp;
+    if (isString(mask)) return g.iMask.MaskedPattern;
+    if (mask instanceof Date || mask === Date) return g.iMask.MaskedDate;
+    if (mask instanceof Number || typeof mask === 'number' || mask === Number) return g.iMask.MaskedNumber;
+    if (Array.isArray(mask) || mask === Array) return g.iMask.MaskedDynamic; // $FlowFixMe
 
-    if (mask.prototype instanceof g.IMask.Masked) return mask; // $FlowFixMe
+    if (mask.prototype instanceof g.iMask.Masked) return mask; // $FlowFixMe
 
-    if (mask instanceof Function) return g.IMask.MaskedFunction;
+    if (mask instanceof Function) return g.iMask.MaskedFunction;
     console.warn('Mask not found for mask', mask); // eslint-disable-line no-console
 
-    return g.IMask.Masked;
+    return g.iMask.Masked;
   }
   /** Creates new {@link Masked} depending on mask type */
 
   function createMask(opts) {
     opts = Object.assign({}, opts);
     var mask = opts.mask;
-    if (mask instanceof g.IMask.Masked) return mask;
+    if (mask instanceof g.iMask.Masked) return mask;
     var MaskedClass = maskedClass(mask);
     return new MaskedClass(opts);
   }
@@ -2034,7 +2034,7 @@
       }, {
         key: "appendTo",
         value: function appendTo(masked) {
-          if (!(masked instanceof g.IMask.MaskedPattern)) {
+          if (!(masked instanceof g.iMask.MaskedPattern)) {
             var tail = new ContinuousTailDetails(this.toString());
             return tail.appendTo(masked);
           }
@@ -4586,7 +4586,7 @@
    * @return {InputMask}
    */
 
-  function IMask(el) {
+  function iMask(el) {
     var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     // currently available only for input-like elements
     return new InputMask(el, opts);
@@ -4594,44 +4594,44 @@
   /** {@link InputMask} */
 
 
-  IMask.InputMask = InputMask;
+  iMask.InputMask = InputMask;
   /** {@link Masked} */
 
-  IMask.Masked = Masked;
+  iMask.Masked = Masked;
   /** {@link MaskedPattern} */
 
-  IMask.MaskedPattern = MaskedPattern;
+  iMask.MaskedPattern = MaskedPattern;
   /** {@link MaskedEnum} */
 
-  IMask.MaskedEnum = MaskedEnum;
+  iMask.MaskedEnum = MaskedEnum;
   /** {@link MaskedRange} */
 
-  IMask.MaskedRange = MaskedRange;
+  iMask.MaskedRange = MaskedRange;
   /** {@link MaskedNumber} */
 
-  IMask.MaskedNumber = MaskedNumber;
+  iMask.MaskedNumber = MaskedNumber;
   /** {@link MaskedDate} */
 
-  IMask.MaskedDate = MaskedDate;
+  iMask.MaskedDate = MaskedDate;
   /** {@link MaskedRegExp} */
 
-  IMask.MaskedRegExp = MaskedRegExp;
+  iMask.MaskedRegExp = MaskedRegExp;
   /** {@link MaskedFunction} */
 
-  IMask.MaskedFunction = MaskedFunction;
+  iMask.MaskedFunction = MaskedFunction;
   /** {@link MaskedDynamic} */
 
-  IMask.MaskedDynamic = MaskedDynamic;
+  iMask.MaskedDynamic = MaskedDynamic;
   /** {@link createMask} */
 
-  IMask.createMask = createMask;
+  iMask.createMask = createMask;
   /** {@link MaskElement} */
 
-  IMask.MaskElement = MaskElement;
+  iMask.MaskElement = MaskElement;
   /** {@link HTMLMaskElement} */
 
-  IMask.HTMLMaskElement = HTMLMaskElement;
-  g.IMask = IMask;
+  iMask.HTMLMaskElement = HTMLMaskElement;
+  g.iMask = iMask;
 
   exports.HTMLMaskElement = HTMLMaskElement;
   exports.InputMask = InputMask;
@@ -4646,7 +4646,7 @@
   exports.MaskedRange = MaskedRange;
   exports.MaskedRegExp = MaskedRegExp;
   exports.createMask = createMask;
-  exports.default = IMask;
+  exports.default = iMask;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
