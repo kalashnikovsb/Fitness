@@ -32,7 +32,7 @@ var screenWidthDetection = function () {
     trainerWidth = 256; // 226px + 30px
     trainerCount = 1;
     trainerPosition = 0;
-    reviewWidth = 246; // 246px + 20px
+    reviewWidth = 266; // 246px + 20px
     reviewPosition = 0;
   }
 
@@ -40,7 +40,7 @@ var screenWidthDetection = function () {
     trainerWidth = 298; // 266px + 30px
     trainerCount = 2;
     trainerPosition = 0;
-    reviewWidth = 586; // 566px + 20px
+    reviewWidth = 606; // 566px + 40px
     reviewPosition = 0;
   }
 
@@ -48,7 +48,7 @@ var screenWidthDetection = function () {
     trainerWidth = 300; // 260px + 40px
     trainerCount = 4;
     trainerPosition = 0;
-    reviewWidth = 580; // 560px + 20px
+    reviewWidth = 600; // 560px + 40px
     reviewPosition = 0;
   }
 };
@@ -61,6 +61,7 @@ if (trainers) {
     trainerPosition = Math.min(trainerPosition, 0);
     if (trainersList) {
       trainersList.style.marginLeft = trainerPosition + 'px';
+      trainersList.style.transition = 'margin-left 0.5s';
     }
   };
 
@@ -70,6 +71,7 @@ if (trainers) {
     trainerPosition = Math.max(trainerPosition, -trainerWidth * (trainerItemsAll.length - trainerCount));
     if (trainersList) {
       trainersList.style.marginLeft = trainerPosition + 'px';
+      trainersList.style.transition = 'margin-left 0.5s';
     }
   };
 
@@ -99,6 +101,7 @@ if (reviews) {
     reviewPosition = Math.min(reviewPosition, 0);
     if (reviewsList) {
       reviewsList.style.marginLeft = reviewPosition + 'px';
+      reviewsList.style.transition = 'margin-left 0.5s';
     }
   };
 
@@ -108,6 +111,7 @@ if (reviews) {
     reviewPosition = Math.max(reviewPosition, -reviewWidth * (reviewsItemsAll.length - reviewCount));
     if (reviewsList) {
       reviewsList.style.marginLeft = reviewPosition + 'px';
+      reviewsList.style.transition = 'margin-left 0.5s';
     }
   };
 

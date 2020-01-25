@@ -27,6 +27,7 @@
   background-color: #5087e5;
   background-position: 100% 50%;
   background-repeat: no-repeat;
+  display: flex;
 }
 
 .webp .special-offers__left {
@@ -59,6 +60,9 @@
   padding-bottom: 47px;
   padding-left: 45px;
   padding-right: 40px;
+  min-height: 462px;
+  display: flex;
+  flex-direction: column;
 }
 
 .special-offers__left h3 {
@@ -89,7 +93,7 @@
   font-weight: 400;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 188px;
+  margin-bottom: 10px;
 }
 
 .special-offers__link {
@@ -99,13 +103,13 @@
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.05em;
-  display: inline-block;
-  margin-top: 0;
+  margin-top: auto;
   margin-bottom: 0;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
   z-index: 3;
+  align-self: flex-start;
 }
 
 .special-offers__link:hover,
@@ -137,10 +141,13 @@
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 147px;
 }
 
 .special-offers__right-block:last-of-type {
-  padding-bottom: 36px;
+  padding-bottom: 37px;
   margin-bottom: 0;
 }
 
@@ -174,20 +181,18 @@
   font-weight: 400;
   color: #1c3374;
   margin-top: 0;
-  margin-bottom: 67px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 3;
 }
 
-.special-offers__link--right-top,
-.special-offers__link--right-bottom {
+.special-offers__right a {
+  color: #1c3374;
   font-size: 12px;
   line-height: 14px;
-  color: #1c3374;
 }
 
-.special-offers__link--right-top::before,
-.special-offers__link--right-bottom::before {
+.special-offers__right a::before {
   background: #1c3374;
 }
 
@@ -253,7 +258,7 @@
   }
 
   .special-offers__left p {
-    margin-bottom: 188px;
+    margin-bottom: 10px;
   }
 
   .special-offers__right {
@@ -264,6 +269,7 @@
 
   .special-offers__right-block {
     width: 324px;
+    min-height: 211px;
     box-sizing: border-box;
     padding-top: 27px;
     padding-bottom: 36px;
@@ -299,11 +305,7 @@
     font-weight: 400;
     color: #1c3374;
     margin-top: 0;
-    margin-bottom: 45px;
-  }
-
-  .special-offers__link--right-bottom {
-    margin-top: 25px;
+    margin-bottom: 10px;
   }
 }
 
@@ -317,6 +319,14 @@
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 46px;
+  }
+
+  .special-offers p {
+    margin-bottom: 10px;
+  }
+
+  .special-offers__link {
+    align-self: center;
   }
 
   .special-offers__left {
@@ -348,6 +358,8 @@
   }
 
   .special-offers__left-wrap {
+    display: block;
+    min-height: auto;
     text-align: center;
     width: auto;
     padding-top: 32px;
@@ -376,7 +388,7 @@
     text-align: center;
     width: auto;
     padding-top: 38px;
-    padding-bottom: 47px;
+    padding-bottom: 48px;
     padding-left: 47px;
     padding-right: 47px;
     margin-bottom: 30px;
@@ -400,9 +412,5 @@
 
   .special-offers__right p {
     margin-bottom: 23px;
-  }
-
-  .special-offers__link--right-bottom {
-    margin-top: 0;
   }
 }

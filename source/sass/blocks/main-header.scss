@@ -1,5 +1,5 @@
 .main-header {
-  padding-bottom: 48px;
+  padding-bottom: 51px;
   background: radial-gradient(circle at left bottom, #003d85, #b80027 50%);
 }
 
@@ -8,6 +8,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   padding-top: 28px;
   padding-bottom: 0;
   padding-left: 104px;
@@ -22,8 +23,12 @@
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-left: auto;
+  margin-right: 20px;
   text-decoration: none;
+}
+
+.main-header__link:last-of-type {
+  margin-right: 0;
 }
 
 .main-header__link:hover,
