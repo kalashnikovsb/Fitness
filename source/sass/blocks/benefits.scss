@@ -1,3 +1,4 @@
+/* autoprefixer grid: autoplace */
 .benefits {
   background: #f8f9fc;
   padding-top: 114px;
@@ -10,9 +11,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-  "benefits__item--top-left benefits__add benefits__item--top-right"
-  "benefits__item--bottom-left benefits__add benefits__item--bottom-right";
+  grid-template-areas: "benefits__item--top-left benefits__add benefits__item--top-right" "benefits__item--bottom-left benefits__add benefits__item--bottom-right";
 }
 
 .benefits__item {
@@ -217,13 +216,6 @@
   margin-bottom: 0;
 }
 
-
-
-
-
-
-
-
 @media (max-width: $desktop-width) {
   .benefits {
     padding-top: 95px;
@@ -236,10 +228,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "benefits__item--top-left benefits__item--top-right"
-    "benefits__add benefits__add"
-    "benefits__item--bottom-left benefits__item--bottom-right";
+    grid-template-areas: "benefits__item--top-left benefits__item--top-right" "benefits__add benefits__add" "benefits__item--bottom-left benefits__item--bottom-right";
   }
 
 
