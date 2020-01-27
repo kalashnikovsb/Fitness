@@ -254,3 +254,11 @@
     border-bottom: 9px solid transparent;
   }
 }
+
+.reviews__control-left:focus {
+  outline: none;
+}
+
+.reviews__control-right:focus {
+  outline: none;
+}

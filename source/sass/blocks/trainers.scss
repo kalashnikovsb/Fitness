@@ -307,6 +307,14 @@
     border-bottom: 9px solid transparent;
   }
 
+  .trainers__control-left:focus {
+    outline: none;
+  }
+
+  .trainers__control-right:focus {
+    outline: none;
+  }
+
   .trainers h2 {
     font-size: 32px;
     line-height: 32px;
