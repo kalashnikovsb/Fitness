@@ -46,7 +46,7 @@
   border-bottom: 1px solid #74819c;
   padding-bottom: 6px;
   margin-bottom: 30px;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .main-form input::placeholder {
@@ -84,6 +84,7 @@
 
   .main-form input {
     width: 206px;
+    border-radius: 0;
   }
 }
 
@@ -116,6 +117,7 @@
     display: block;
     width: 100%;
     margin-bottom: 36px;
+    border-radius: 0;
   }
 
   .main-form input:last-of-type {

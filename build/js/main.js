@@ -57,8 +57,12 @@ var screenWidthDetection = function () {
 if (trainers) {
   // Предыдущий тренер
   var prevTrainerItem = function () {
-    trainerPosition += trainerWidth;
     trainerPosition = Math.min(trainerPosition, 0);
+    if (trainerPosition === 0) {
+      trainerPosition = -trainerWidth * (trainerItemsAll.length - trainerCount);
+    } else {
+      trainerPosition += trainerWidth;
+    }
     if (trainersList) {
       trainersList.style.marginLeft = trainerPosition + 'px';
       trainersList.style.transition = 'margin-left 0.5s';
@@ -67,8 +71,12 @@ if (trainers) {
 
   // Следующий тренер
   var nextTrainerItem = function () {
-    trainerPosition -= trainerWidth;
     trainerPosition = Math.max(trainerPosition, -trainerWidth * (trainerItemsAll.length - trainerCount));
+    if (trainerPosition === -trainerWidth * (trainerItemsAll.length - trainerCount)) {
+      trainerPosition = 0;
+    } else {
+      trainerPosition -= trainerWidth;
+    }
     if (trainersList) {
       trainersList.style.marginLeft = trainerPosition + 'px';
       trainersList.style.transition = 'margin-left 0.5s';
@@ -97,18 +105,27 @@ if (trainers) {
 if (reviews) {
   // Предыдущий отзыв
   var prevReviewItem = function () {
-    reviewPosition += reviewWidth;
     reviewPosition = Math.min(reviewPosition, 0);
+    if (reviewPosition === 0) {
+      reviewPosition = -reviewWidth * (reviewsItemsAll.length - reviewCount);
+    } else {
+      reviewPosition += reviewWidth;
+    }
     if (reviewsList) {
       reviewsList.style.marginLeft = reviewPosition + 'px';
       reviewsList.style.transition = 'margin-left 0.5s';
     }
+
   };
 
   // Следующий отзыв
   var nextReviewItem = function () {
-    reviewPosition -= reviewWidth;
     reviewPosition = Math.max(reviewPosition, -reviewWidth * (reviewsItemsAll.length - reviewCount));
+    if (reviewPosition === -reviewWidth * (reviewsItemsAll.length - reviewCount)) {
+      reviewPosition = 0;
+    } else {
+      reviewPosition -= reviewWidth;
+    }
     if (reviewsList) {
       reviewsList.style.marginLeft = reviewPosition + 'px';
       reviewsList.style.transition = 'margin-left 0.5s';
